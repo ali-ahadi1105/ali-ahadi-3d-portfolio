@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la ~/.claude /home/morty/codes/projects/3d_project 2>/dev/null)",
+      "Read(//home/morty/.claude/**)",
+      "Bash(mkdir -p ~/.claude/skills/web3d-integration-patterns /home/morty/codes/projects/3d_project/.claude/skills/web3d-integration-patterns)",
+      "Bash(curl -sL https://raw.githubusercontent.com/freshtechbro/claudedesignskills/main/.claude/skills/web3d-integration-patterns/SKILL.md -o ~/.claude/skills/web3d-integration-patterns/SKILL.md)",
+      "Bash(cp ~/.claude/skills/web3d-integration-patterns/SKILL.md /home/morty/codes/projects/3d_project/.claude/skills/web3d-integration-patterns/SKILL.md)",
+      "WebFetch(domain:www.raomuhammadhamza.tech)",
+      "Bash(npm -v)",
+      "Bash(npm create *)",
+      "Bash(npx -y create-vite . --template react-ts --force)",
+      "Bash(npx -y create-vite temp_app --template react-ts)",
+      "Bash(cp -r temp_app/. .)",
+      "Bash(npm install *)"
+    ],
+    "additionalDirectories": [
+      "/home/morty/.claude/skills"
+    ]
+  }
+}

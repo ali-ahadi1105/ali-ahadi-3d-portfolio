@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-room: #f4efe6;
+    --warm-sun: #fff3db;
+    --wood-accent: #c49a6c;
+  }
+
+  body {
+    background-color: #f4efe6;
+    color: #1e293b;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+  }
+}
+
+/* Custom Minimalist Warm Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Warm sunlight bloom */
+.warm-sunlight {
+  background: radial-gradient(circle at 15% 20%, rgba(254, 243, 199, 0.45) 0%, rgba(244, 239, 230, 0) 65%);
+  pointer-events: none;
+}
+
+/* Floating label hover animation */
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+.floating-hint {
+  animation: floatBob 2.5s ease-in-out infinite;
+}
